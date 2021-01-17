@@ -44,7 +44,7 @@ function App() {
   useEffect(() => {
     Axios.get("https://mern-todo-practice.herokuapp.com/read")
       .then((res) => {
-        console.log(res.data);
+        console.log(res);
         setListOfTodo(res.data);
       })
       .catch(() => {
